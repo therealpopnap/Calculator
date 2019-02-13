@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="552.0" style="-fx-background-color: CBD3FC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="calculate" layoutX="247.0" layoutY="187.0" mnemonicParsing="false" onAction="#sum" text="Calculate">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#bc3939" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Blend />
+         </effect></Button>
+      <Text layoutX="242.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percentage" wrappingWidth="88.00000023841858">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.019047619047619035">
+               <stops>
+                  <Stop color="#651111" />
+                  <Stop color="#0df86b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="259.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scores">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8428571428571427" startY="0.14285714285714285">
+               <stops>
+                  <Stop color="#8f3568" />
+                  <Stop color="#382be4" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TextField fx:id="percentage1" alignment="CENTER" layoutX="100.0" layoutY="54.0" prefHeight="31.0" prefWidth="60.0" promptText="Eg: 10%" />
+      <TextField fx:id="percentage2" alignment="CENTER" layoutX="250.0" layoutY="54.0" prefHeight="31.0" prefWidth="60.0" promptText="Eg: 15%" />
+      <TextField fx:id="percentage3" alignment="CENTER" layoutX="400.0" layoutY="54.0" prefHeight="31.0" prefWidth="60.0" promptText="Eg: 20%" />
+      <TextField fx:id="score1" alignment="CENTER" layoutX="100.0" layoutY="131.0" prefHeight="31.0" prefWidth="60.0" promptText="Eg: 20" />
+      <TextField fx:id="score2" alignment="CENTER" layoutX="250.0" layoutY="131.0" prefHeight="31.0" prefWidth="60.0" promptText="Eg: 16" />
+      <TextField fx:id="score3" alignment="CENTER" layoutX="400.0" layoutY="131.0" prefHeight="31.0" prefWidth="60.0" promptText="Eg: 14" />
+      <TextField fx:id="answer" alignment="CENTER" editable="false" layoutX="198.0" layoutY="240.0" mouseTransparent="true" prefHeight="46.0" prefWidth="166.0" />
+      <ImageView fx:id="qb" fitHeight="141.0" fitWidth="127.0" layoutX="40.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@qb1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="qb2" fitHeight="110.0" fitWidth="127.0" layoutX="400.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@qb2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
